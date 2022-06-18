@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('images/desktop.png');
+    width: 100%;
+    height: 120vh;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+
+}
+
+main{
+    width: 100%;
+    height:100%;
+    background-color: rgba(233, 70, 70, 0.7);
+    align-items: center;
+    display: flex;
+
+}
+.main-top{
+    padding-bottom: 20px;
+    width: 70%;
+    height: 80%;
+    display:flex;
+    margin: 0 auto;
+}
+.main-top .main-left{
+    width: calc(100%/2);
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.letter{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.letter h2{
+    line-height: 0.8;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.main-right{
+    width: calc(100%/2);
+    height: 100%;
+}
+
+.main-right .top{
+    width: 80%;
+    height: 10%;
+   display: grid;
+   margin: 0 auto;
+   border-radius: 10px;
+   align-items: center;
+    background-color: #5D54A3;
+    margin-bottom: 30px;
+}
+
+.main-right .top p{
+    height: auto;
+    width: auto;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+.main-right .top p span{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+form{
+    background-color: white;
+    width: 80%;
+    border-radius: 15px;
+    height: 80%;
+    padding: 20px;
+    margin: 0 auto;
+}
+input{
+    width: 100%;
+    height: 13%;
+    border-radius: 5px;
+    margin: 15px 0;
+    border: 1px solid #B6B5BB
+}
+
+input::placeholder{
+    padding-left: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+button{
+    padding: 18px;
+    background-color: #37CC8A;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    border: none
+}
+
+form p{
+    width: 100%;
+    font-size: 0.7em;
+    padding:5px;
+}
+form p span{
+    color: red;
+}
+
+@media screen and (max-width: 873px){
+    .main-top{
+        font-display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .main-top .main-left{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 21px;
+    }
+
+    .letter{
+        width: 100%;
+        height: 60%;
+      
+    }
+
+    .letter h2{
+        font-size: 2em;
+        width: 100%;
+       text-align: justify;
+      
+   
+    }
+    
+
+    .main-top .main-right{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    button{
+        padding: 10px;
+        background-color: #37CC8A;
+        margin-bottom: 10px;
+    }
+    
+    form p{
+        width: 100%;
+        font-size: 0.5em;
+        text-align: center;
+    }
+    form p span{
+        color: red;
+    }
+    form {
+        height: 70vh;
+    }
+
+    .main-right .top{
+        padding: 15px 5px;
+        width: 100%;
+    
+    }
+
+    form{
+        width: 100%;
+ 
+    }
+    
+}
